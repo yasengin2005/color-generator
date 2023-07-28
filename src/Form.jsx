@@ -1,12 +1,13 @@
 import { useState } from "react";
 
-function Form({ addColor }) {
+const Form = ({ addColor }) => {
   const [color, setColor] = useState("");
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    addColor(color)
+    addColor(color);
   };
+
   return (
     <section className="container">
       <h4>color generator</h4>
@@ -31,3 +32,4 @@ function Form({ addColor }) {
 }
 
 export default Form;
+
